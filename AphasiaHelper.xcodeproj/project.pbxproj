@@ -36,6 +36,11 @@
 		1DE7C2C624E908C500BDA7E2 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7C2C524E908C500BDA7E2 /* ColorPicker.swift */; };
 		1DE7C2C824E908EB00BDA7E2 /* ColorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7C2C724E908EB00BDA7E2 /* ColorsProvider.swift */; };
 		1DE7C2CA24E9101E00BDA7E2 /* DrawingRecognitionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7C2C924E9101E00BDA7E2 /* DrawingRecognitionResultView.swift */; };
+		F4410A08257CAE5400B84521 /* SubjectWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4410A07257CAE5400B84521 /* SubjectWordView.swift */; };
+		F4410A0B257CAE8700B84521 /* PredicateWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4410A0A257CAE8700B84521 /* PredicateWordView.swift */; };
+		F4410A0E257CAE9E00B84521 /* ObjectWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4410A0D257CAE9E00B84521 /* ObjectWordView.swift */; };
+		F4410A11257CAEBD00B84521 /* ActivityWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4410A10257CAEBD00B84521 /* ActivityWordView.swift */; };
+		F4410A15257CBAB000B84521 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4410A14257CBAB000B84521 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,11 @@
 		1DE7C2C524E908C500BDA7E2 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		1DE7C2C724E908EB00BDA7E2 /* ColorsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsProvider.swift; sourceTree = "<group>"; };
 		1DE7C2C924E9101E00BDA7E2 /* DrawingRecognitionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingRecognitionResultView.swift; sourceTree = "<group>"; };
+		F4410A07257CAE5400B84521 /* SubjectWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectWordView.swift; sourceTree = "<group>"; };
+		F4410A0A257CAE8700B84521 /* PredicateWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateWordView.swift; sourceTree = "<group>"; };
+		F4410A0D257CAE9E00B84521 /* ObjectWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectWordView.swift; sourceTree = "<group>"; };
+		F4410A10257CAEBD00B84521 /* ActivityWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityWordView.swift; sourceTree = "<group>"; };
+		F4410A14257CBAB000B84521 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4410A15257CBAB000B84521 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 			children = (
 				1D81B43F24DA45EB0048D6AB /* AphasiaHelper */,
 				1D81B43E24DA45EB0048D6AB /* Products */,
+				F4410A13257CBAAF00B84521 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +144,10 @@
 				1DE7C2B524E8F50800BDA7E2 /* RecordingDataModel.swift */,
 				1DE7C2B724E8F59E00BDA7E2 /* Helper.swift */,
 				1DE7C2B924E8F89300BDA7E2 /* AudioPlayer.swift */,
+				F4410A07257CAE5400B84521 /* SubjectWordView.swift */,
+				F4410A0A257CAE8700B84521 /* PredicateWordView.swift */,
+				F4410A0D257CAE9E00B84521 /* ObjectWordView.swift */,
+				F4410A10257CAEBD00B84521 /* ActivityWordView.swift */,
 			);
 			path = AphasiaHelper;
 			sourceTree = "<group>";
@@ -142,6 +158,14 @@
 				1D81B44924DA45EB0048D6AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4410A13257CBAAF00B84521 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4410A14257CBAB000B84521 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,12 +250,16 @@
 				1D3EC55024E39C1500A2B544 /* MaterialLibraryView.swift in Sources */,
 				1DE7C2C424E9086D00BDA7E2 /* ColorEntry.swift in Sources */,
 				1D978ABD24F9C9FC004C3B8E /* StartConversationView.swift in Sources */,
+				F4410A08257CAE5400B84521 /* SubjectWordView.swift in Sources */,
 				1DE7C2BE24E9078D00BDA7E2 /* Drawing.swift in Sources */,
 				1D3EC54C24E3942500A2B544 /* ViewRouter.swift in Sources */,
 				1DE7C2B024E8E98B00BDA7E2 /* AudioRecorder.swift in Sources */,
+				F4410A11257CAEBD00B84521 /* ActivityWordView.swift in Sources */,
 				1DE7C2B624E8F50800BDA7E2 /* RecordingDataModel.swift in Sources */,
 				1DE7C2BA24E8F89300BDA7E2 /* AudioPlayer.swift in Sources */,
 				1DE7C2B224E8EC3500BDA7E2 /* Extensions.swift in Sources */,
+				F4410A0B257CAE8700B84521 /* PredicateWordView.swift in Sources */,
+				F4410A0E257CAE9E00B84521 /* ObjectWordView.swift in Sources */,
 				1DE7C2C824E908EB00BDA7E2 /* ColorsProvider.swift in Sources */,
 				1DE7C2C624E908C500BDA7E2 /* ColorPicker.swift in Sources */,
 				1DE7C2B424E8F34900BDA7E2 /* RecordingsList.swift in Sources */,

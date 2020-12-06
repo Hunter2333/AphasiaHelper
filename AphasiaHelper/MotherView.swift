@@ -26,6 +26,14 @@ struct MotherView: View {
                 DrawingBoardView(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "DrawingRecognitionResult" {
                 DrawingRecognitionResultView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "SubjectWord" {
+                SubjectWordView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "PredicateWord" {
+                PredicateWordView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "ObjectWord" {
+                ObjectWordView(viewRouter: viewRouter)
+            } else if viewRouter.currentPage == "ActivityWord" {
+                ActivityWordView(viewRouter: viewRouter)
             }
         }
     }

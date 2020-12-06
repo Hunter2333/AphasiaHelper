@@ -14,29 +14,59 @@ struct MaterialLibraryView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("素材库")
+            Text("词库")
                 .font(.largeTitle).padding(.top, 40)
             Spacer()
             // TODO START
             HStack {
-                VStack(alignment: .leading, spacing: 24) {
-                    Text("面包").font(.title).fontWeight(.bold)
-                    Image("bread")
-                        .resizable()
-                        .frame(width: 200, height: 150)
-                }.padding(30)
-                VStack(alignment: .leading, spacing: 24) {
-                    Text("眼镜").font(.title).fontWeight(.bold)
-                    Image("glasses")
-                        .resizable()
-                        .frame(width: 200, height: 150)
-                }.padding(30)
-                VStack(alignment: .leading, spacing: 24) {
-                    Text("手机").font(.title).fontWeight(.bold)
-                    Image("mobilephone")
-                        .resizable()
-                        .frame(width: 200, height: 150)
-                }.padding(30)
+                VStack {
+                    Button(action: {
+                        self.viewRouter.currentPage = "SubjectWord"
+                    }) {
+                        Text("主语")
+                            .font(.title)
+                        .fontWeight(.bold)
+                        .frame(width: 150.0, height: 150.0)
+                        .foregroundColor(.white)
+                            .background(Color.blue)
+                        .cornerRadius(20.0)
+                    }.padding()
+                    Button(action: {
+                        self.viewRouter.currentPage = "PredicateWord"
+                    }) {
+                        Text("谓语")
+                            .font(.title)
+                        .fontWeight(.bold)
+                        .frame(width: 150.0, height: 150.0)
+                        .foregroundColor(.white)
+                            .background(Color.blue)
+                        .cornerRadius(20.0)
+                    }.padding()
+                }
+                VStack {
+                    Button(action: {
+                        self.viewRouter.currentPage = "ObjectWord"
+                    }) {
+                        Text("宾语")
+                            .font(.title)
+                        .fontWeight(.bold)
+                        .frame(width: 150.0, height: 150.0)
+                        .foregroundColor(.white)
+                            .background(Color.blue)
+                        .cornerRadius(20.0)
+                    }.padding()
+                    Button(action: {
+                        self.viewRouter.currentPage = "ActivityWord"
+                    }) {
+                        Text("行为词")
+                            .font(.title)
+                        .fontWeight(.bold)
+                        .frame(width: 150.0, height: 150.0)
+                        .foregroundColor(.white)
+                            .background(Color.blue)
+                        .cornerRadius(20.0)
+                    }.padding()
+                }
             }
             //TODO END
             Spacer()
